@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "aot": "node --max_old_space_size=8000 ./node_modules/@angular/cli/bin/ng serve --prod",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
@@ -20,10 +21,9 @@
     "@angular/platform-browser": "^6.1.0",
     "@angular/platform-browser-dynamic": "^6.1.0",
     "@angular/router": "^6.1.0",
-    "aws-amplify": "^1.1.22",
-    "aws-amplify-angular": "^2.1.9",
     "core-js": "^2.5.4",
     "rxjs": "~6.2.0",
+    "rxjs-compat": "^6.4.0",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
