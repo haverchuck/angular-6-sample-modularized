@@ -28,7 +28,11 @@ const template = `
       <div style="text-align:center;  color: var(--color-white)">
         Amplify Interactions
       </div>
-
+      <amplify-interactions
+        bot="ScheduleAppointment_dev"
+        clearComplete="true"
+        (complete)="onBotComplete($event)">
+      </amplify-interactions>
     </div>
   </section>
 `
